@@ -1,0 +1,7 @@
+changed "correct" value to "value" to add A,B,Cs but there are 4 instances where i didnt change correct, so we nned to look out for that
+changed values from "true" or "false" to A,B,C's 
+CHANGED my mind, will change value to 1,2,3
+successfully added ABCs count
+about to commit next is to make the buttons as radio buttons
+
+#0 commit;
