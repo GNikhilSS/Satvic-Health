@@ -5,3 +5,61 @@ successfully added ABCs count
 about to commit next is to make the buttons as radio buttons
 
 #0 commit;
+{
+    question: "How do you add a comment in CSS?",
+    answers: [
+      { text: "// comment", value: 1 },
+      { text: "<!-- comment -->", value: 2 },
+      { text: "/* comment */", value: 3 },
+    ],
+  },
+  {
+    question: "Which JavaScript method is used to select an element by ID?",
+    answers: [
+      { text: "getElementsByClassName()", value: 1 },
+      { text: "getElementById()", value: 2 },
+      { text: "querySelectorAll()", value: 3 },
+    ],
+  },
+  {
+    question: "What does DOM stand for?",
+    answers: [
+      { text: "Document Object Mapping", value: 1 },
+      { text: "Data Object Model", value: 2 },
+      { text: "Document Object Model", value: 3 },
+    ],
+  },
+  {
+    question: "Which of the following is NOT a valid JavaScript data type?",
+    answers: [
+      { text: " String", value: 1 },
+      { text: "Boolean", value: 2 },
+      { text: "Float", value: 3 },
+    ],
+  },
+  {
+    question: "Which CSS property is used to make a website responsive?",
+    answers: [
+      { text: "position", value: 1 },
+      { text: "transition", value: 2 },
+      { text: "media", value: 3 },
+    ],
+  },
+  {
+    question:
+      "In React, what is used to pass data from parent to child component?",
+    answers: [
+      { text: "Props", value: 1 },
+      { text: "State", value: 2 },
+      { text: "Context", value: 3 },
+    ],
+  },
+  {
+    question:
+      "Which attribute is used in HTML to provide alternate text for an image?",
+    answers: [
+      { text: "alt", value: 1 },
+      { text: "title", value: 2 },
+      { text: "src", value: 3 },
+    ],
+  },

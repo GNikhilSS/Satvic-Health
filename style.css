@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color: rgb(0, 255, 247);
+    --main-color: rgb(6, 87, 84);
     --primary-color: #fff;
 }
 body{
@@ -43,11 +43,7 @@ body{
 .btn:disabled{
     cursor: no-drop;
 }
-<<<<<<< HEAD
-#next-btn{
-=======
 #nextButton{
->>>>>>> 316cad7 (Initial commit)
     background-color: var(--main-color);
     width: 150px;
     padding: 15px 40px;
