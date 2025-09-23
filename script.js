@@ -23,7 +23,6 @@ const questions = [
       { text: "color", value: 3 },
     ],
   },
-
 ];
 
 const questionElement = document.getElementById("questionElement");
@@ -69,7 +68,6 @@ function showQuestion() {
     container.appendChild(optionLabel);
 
     optionInput.addEventListener("click", selectOption);
-
   });
   nextButton.style.display = "none";
 }
@@ -79,18 +77,24 @@ function resetState() {
 }
 
 function selectOption() {
-  Array.from(answerElement.children).forEach(button =>{
-      if(button.selected === "true"){
-          button.classList.add("correct");
-      }
-      button.disabled = true;
+  // To select all radio elements
+  const options = answerElement.querySelectorAll("input[type='radio']");
+  // To change ui for selected option
+  Array.from(options).forEach((option) => {
+    console.log(option);
+    const button = option.parentElement;
+    button.classList.remove("correct");
+    if (option.checked === true) {
+      button.classList.add("correct");
+    }
   });
+  // To show the 'next' button when option clicked
   nextButton.style.display = "block";
 }
 
 function checkOption() {
-  console.log(document.querySelectorAll(`input[name="option"]`))
-  let selectedBtn = document.querySelector(`input[name="option"]:checked`)
+  console.log(document.querySelectorAll(`input[name="option"]`));
+  let selectedBtn = document.querySelector(`input[name="option"]:checked`);
   console.log(selectedBtn);
   let isValue = selectedBtn.value;
   if (isValue === "1") {

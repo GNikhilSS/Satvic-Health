@@ -63,3 +63,10 @@ about to commit next is to make the buttons as radio buttons
       { text: "src", value: 3 },
     ],
   },
+
+Radio buttons are working
+Score is being updated for each option, i.e, A's B's and C's are being counted properly.
+ui also being updated properly. Now shld work on styling of selected option.
+commited to github
+#1 commit;
+
