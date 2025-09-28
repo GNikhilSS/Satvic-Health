@@ -37,6 +37,7 @@ body{
 }
 .btn:hover:not([disabled]){
     background-color: var(--main-color);
+    color: var(--primary-color);
     transition: ease-in 0.3s all;
     cursor: pointer;
 }
@@ -55,10 +56,19 @@ body{
     display: none;
 }
 .correct{
-    background-color: green;
+    background-color: rgb(16, 237, 222);
     color: #fff;
 }
 .incorrect{
     background-color: red;
     color: #fff;
+}
+
+/* Option styling  */
+input[type="radio"] {
+  display: none; /* hides the circle */
+}
+
+label {
+    cursor: pointer;
 }

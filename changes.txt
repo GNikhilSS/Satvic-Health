@@ -70,3 +70,8 @@ ui also being updated properly. Now shld work on styling of selected option.
 commited to github
 #1 commit;
 
+Try to add comments but dont make them too much
+
+#2 commmit:
+  Added a questionNumber counter, still need to style it .
+  Removed some extra code and tinkered some more with the options.
