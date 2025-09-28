@@ -28,6 +28,7 @@ const questions = [
 const questionElement = document.getElementById("questionElement");
 const answerElement = document.getElementById("answerElement");
 const nextButton = document.getElementById("nextButton");
+const questionNoElement = document.getElementById('questionNoElement');
 
 let currentQuestionIndex = 0;
 let A_s = 0;
@@ -39,7 +40,6 @@ function startQuiz() {
   A_s = 0;
   B_s = 0;
   C_s = 0;
-  nextButton.innerHTML = "Next";
   showQuestion();
 }
 
@@ -48,6 +48,7 @@ function showQuestion() {
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  questionNoElement.innerHTML = questionNo;
 
   currentQuestion.answers.forEach((answer) => {
     const container = document.createElement("div");
@@ -81,7 +82,6 @@ function selectOption() {
   const options = answerElement.querySelectorAll("input[type='radio']");
   // To change ui for selected option
   Array.from(options).forEach((option) => {
-    console.log(option);
     const button = option.parentElement;
     button.classList.remove("correct");
     if (option.checked === true) {
@@ -93,7 +93,6 @@ function selectOption() {
 }
 
 function checkOption() {
-  console.log(document.querySelectorAll(`input[name="option"]`));
   let selectedBtn = document.querySelector(`input[name="option"]:checked`);
   console.log(selectedBtn);
   let isValue = selectedBtn.value;
